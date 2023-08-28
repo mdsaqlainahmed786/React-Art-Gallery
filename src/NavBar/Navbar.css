@@ -1,0 +1,41 @@
+.navitems{
+   margin-right: 280px;
+  /* margin-top:-37px;*/
+}
+.navitems1{
+  margin-top:-37px;
+ margin-right:100px;
+  
+}
+.navitems2{
+  margin-top:-38px;
+  margin-left:90px;
+}
+
+.Nav{
+  background-color:#192734;
+  color:black;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+  padding:2px;
+ top:0px;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+/* ... your existing styles ... */
+.drktheme{
+  border: none;
+  background-color: inherit;
+  padding: 10px 10px;
+  font-size:15px;
+  cursor: pointer;
+  display: inline-block;
+ position: absolute;
+ margin-top:-7px;
+margin-left:100px;
+ color:white;
+}
+.Nav.dark{
+  background-color:#28282B;
+}

@@ -1,0 +1,134 @@
+/*body{
+ scroll-behavior:smooth; 
+}*/
+.container {
+  position: relative;
+ }
+
+.bodyimage {
+ filter: brightness(50%);
+  height: 270px;
+  width: 100%;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+.Text{
+  position: absolute;
+  color: white;
+  filter: none;
+  top:8%;
+  left:4%;
+  font-size:50px;
+  font-weight:400;
+}
+.content1::after{
+  content:"\a";
+  white-space: pre;
+}
+.content2::after{
+  content:"\a";
+  white-space: pre;
+}
+.inputfeild{
+position: absolute;
+  top: 79%; /* Position it below the title */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Center the input field */
+  z-index: 1; 
+  padding: 10px 80px 10px 8px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 30px;
+}
+.imagecards{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+img{
+  box-shadow: 10px 10px 5px #ccc;
+ -moz-box-shadow: 10px 10px 5px #ccc;
+ -webkit-box-shadow: 10px 10px 5px #ccc;
+ -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+.column img{
+transition: 1s ease;
+}
+
+.column img:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+.fetch {
+  color:white;
+/*  width: 45px;
+  height: 47px; */
+  outline: 0px;
+  border:0px;
+  background-color:#192734;
+ /* margin-top:7px;
+  margin-bottom:50px;*/
+  height:35.5px;
+  width:70px;
+ border-top-right-radius: 15px;
+ border-bottom-right-radius: 15px;
+  position:absolute;
+  top: 79%; /* Adjust the top position to vertically center the button */
+  right: 60px; /* Adjust the right position to align the button with the input field */
+  transform: translateY(-50%); /* Vertically center the button using transform */
+  z-index: 2;
+}
+.heading.dark{
+  color:white;
+}
+.body.dark{
+  background-color: #121212;
+}
+.inputfeild.dark{
+  background-color:#121212;
+  color:white;
+}
+.fetch.dark{
+  color:black;
+  background-color:white;
+}
+.body.dark .column img{
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -khtml-box-shadow: none;
+}
+.errtext.dark{
+  color:white;
+}
