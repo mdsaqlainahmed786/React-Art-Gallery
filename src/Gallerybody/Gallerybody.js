@@ -66,11 +66,12 @@ useEffect(()=>{
         images.map(photo=><img
         data-aos="zoom-in"
         key={photo.id} 
-        src={photo.webformatURL}/>)
+        src={photo.webformatURL}
+        alt="Images"/>)
       )
       }
 {
-  ( images.length===0 && input.trim()!="") &&
+  ( images.length===0 && input.trim()!=="") &&
   (<>
     <h2 className={`errtext ${theme}`} >Oops!!</h2>
   <img style={{

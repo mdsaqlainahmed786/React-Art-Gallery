@@ -1,4 +1,4 @@
-import Raect from "react"
+import React from "react"
 import "./Footer.css"
 function Footer({theme}) {
    return(
